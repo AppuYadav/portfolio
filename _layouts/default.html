@@ -36,5 +36,23 @@
     <script src='assets/js/plugins/circle-progress.min.js'></script>
     <script src='assets/js/main.js'></script>
 
+    <!-- Email Service -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init('user_M8MgWscbq5d8Kv25PC0G5');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('gmail', 'template_8Nglvr2t', this);
+            });
+        }
+    </script>
+
 </body>
 </html>

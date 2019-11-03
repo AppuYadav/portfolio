@@ -15,7 +15,7 @@
     setPortfolio();
     setActiveMenuItem();
     portfolioItemContentLoadOnClick();
-    sendMail();
+    // sendMail();
 
 
     $(window).on('load', function () {

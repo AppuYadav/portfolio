@@ -20,26 +20,31 @@
                         <b>PHONE:</b> {{ site.data.settings.developer-info.phone }} <br>
                     </p>
                 </div>
-
                 <div class="one-half width-55 last">
                     <div class="contact-form">
-                        <p>
-                            <input id="name" type="text" name="your-name" placeholder="Name">
-                        </p>
-                        <p>
-                            <input id="contact-email" type="email" name="your-email" placeholder="Email">
-                        </p>
-                        <p>
-                            <input id="subject" type="text" name="your-subject" placeholder="Subject">
-                        </p>
-                        <p>
-                            <textarea id="message" name="your-message" placeholder="Message"></textarea>
-                        </p>
-                        <p class="contact-submit-holder">
-                            <input type="submit" value="SEND">
-                        </p>
+                        <form id="contact-form">
+                            <p>
+                                <input type="hidden" name="contact_number">
+                            </p>
+                            <p>
+                                <input type="text" id="name" name="user_name" required placeholder="Name">
+                            </p>
+                            <p>
+                                <input type="email" id="contact-email" name="user_email" required placeholder="Email">
+                            </p>
+                            <p>
+                                <input id="subject" type="text" name="user_subject" required placeholder="Subject">
+                            </p>
+                            <p>
+                                <textarea id="message" name="message" required placeholder="Message"></textarea>
+                            </p>
+                            <p class="contact-submit-holder">
+                                <input type="submit" value="SEND">
+                            </p>
+                        </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
