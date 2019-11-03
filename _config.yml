@@ -4,8 +4,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 permalink: pretty
-plugins:
-  - jekyll-sitemap
 
 # Pages Path
 defaults:
@@ -17,15 +15,34 @@ defaults:
 include:
   - _pages
 
-sass:
-  sass_dir: _sass
-  style: compressed
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-assets:
-    sources:
-        - _assets/
-    compress:
-        css: false
+title: Full Stack Developer
+description: Full Stack Developer and UX Developer
+author: Appu Yadav
+lang: en
+
+# facebook:
+#   app_id: 1234
+#   publisher: 1234
+#   admins: 1234
+
+# twitter:
+#   username: benbalter
+#   card: summary
+
+# webmaster_verifications:
+#   google: 1234
+#   bing: 1234
+#   alexa: 1234
+#   yandex: 1234
+#   baidu: 1234
+
+social:
+  name: Roger the Racoon
+  links: https://twitter.com/BenBalter
 
 # Exclude from processing.
 # The following items will not be processed, by default.

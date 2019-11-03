@@ -44,6 +44,7 @@ home:
     - { name: "TWITTER", link: "https://twitter.com/appu_gaurav" }
     - { name: "INSTAGRAM", link: "https://www.instagram.com/appu2821/" }
     - { name: "FACEBOOK", link: "https://www.facebook.com/profile.php?id=100008435251536&ref=bookmarks" }
+    - { name: "GITHUB", link: "https://github.com/AppuYadav" }
 
 #---------------------------------
 # Header menu
