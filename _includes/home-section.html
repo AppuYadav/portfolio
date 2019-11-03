@@ -1,0 +1,21 @@
+<!-- Home Section -->
+<div id="home" class="section full-width-section">
+    <div class="section-wrapper block">
+        <div class="home-left-part">
+            <p class="site-des">Hello. My name is</p>
+            <h1 class="entry-title">{{ site.data.settings.home.home-name }}</h1>
+            <p class="site-info">
+                {{ site.data.settings.home.home-title-desc }}
+            </p>
+
+            <div class="social-links">
+                {% for social in site.data.settings.home.social %}
+                    <a href="{{ social.link }}" target="_blank">{{ social.name }}</a>
+                {% endfor %}
+            </div>
+
+        </div>
+        <div class="home-right-part">
+        </div>
+    </div>
+</div>

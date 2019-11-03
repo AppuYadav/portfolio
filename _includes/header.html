@@ -1,0 +1,56 @@
+<header>
+    <div class="toggle-holder">
+        <div id="toggle">
+            <div class="menu-line"></div>
+        </div>
+    </div>  
+
+    <div class="top-pagination">
+        <div class="current-num">
+            <span>01</span>                                    
+        </div>
+        <div class="pagination-div"></div>
+        <div class="total-pages-num"></div>
+    </div>
+
+    <div class="menu-holder">
+        <div class="menu-wrapper relative">                                 
+            <nav id="header-main-menu">
+                <ul class="main-menu sm sm-clean">
+                    {% for menu in site.data.settings.header.menu %}
+                        <li><a href="#{{ menu.href }}">{{ menu.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>                            
+        </div>
+    </div>               
+
+    <div class="my-info-wrapper">
+        <div class="my-info">
+            <p class="my-info-title">NAME</p>
+            <p class="my-info-content">{{ site.data.settings.developer-info.name }}</p>
+        </div>
+
+        <div class="my-info">
+            <p class="my-info-title">ROLE</p>
+            <p class="my-info-content">{{ site.data.settings.developer-info.role }}</p>
+        </div>
+
+        <div class="my-info">
+            <p class="my-info-title">EMAIL</p>
+            <p class="my-info-content">{{ site.data.settings.developer-info.email }}</p>
+        </div>
+
+        <div class="my-info">
+            <p class="my-info-title">PHONE</p>
+            <p class="my-info-content">(+91) {{ site.data.settings.developer-info.phone }}</p>
+        </div>
+
+        <img class="my-info-signature" src="assets/images/signature.png" alt="" />
+    </div>   
+
+    <div class="big-num">                              
+        <div class="current-big-num">01</div>
+        <div class="icon-scroll"></div>  
+    </div>
+</header>

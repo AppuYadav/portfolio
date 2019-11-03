@@ -1,0 +1,39 @@
+<div id="service" class="section">
+    <div class="section-wrapper block">
+        <div class="content-1300">
+            <div class="row">
+                <div class="one-half width-55">
+                    <div class="services-wrapper">
+                        {% for service in site.data.settings.services.service %}
+                            <div class="{{ service.class }}">
+                                <img src="{{ service.image }}" alt="{{ service.title }}" />
+                                <h4 class="service-title">{{ service.title }}</h4>
+                                <div class="service-text">
+                                    {{ service.title-info }}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="one-half width-40 last">
+                    <h2 class="entry-title section-title">Services</h2>
+                    <p class="section-info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tristique placerat in massa consectetur quisque nunc fames.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tristique placerat in massa consectetur quisque. Nunc ac fames lectus in libero aliquet.
+                    </p>
+                    <p>
+                        Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu. Vitae faucibus diam consequat maecenas. Turpis metus sit diam purus leo in varius ac quam. Nunc amet tristique volutpat adipiscing vulputate phasellus. Volutpat faucibus
+                    </p>
+
+                    <div class="button-group-wrapper">
+                        <a class="button">Download CV</a>
+                        <a href="#portfolio" class="button">Check My Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+	{% if site.google-analytics %}
+		{% include google-analytics.html %}
+	{% endif %}
+
+    <!-- Preloader Gif -->
+    <div class="doc-loader">
+        <img src="assets/images/preloader.gif" alt="Loading">
+    </div>
+
+    <div class="content-left">
+        <div class="content-left-wrapper">
+	        {% include header.html %}
+        </div>
+    </div>
+
+    <div class="content-right">
+        <div class="content-right-wrapper">
+        {{ content }}
+        </div>
+    </div>
+
+	<!--Load JavaScript-->
+    <script src="{{ site.baseurl }}/assets/js/plugins/jquery.js"></script>
+    <script src='{{ site.baseurl }}/assets/js/plugins/imagesloaded.pkgd.js'></script>
+    <script src='{{ site.baseurl }}/assets/js/plugins/jquery.prettyPhoto.js'></script>
+    <script src='{{ site.baseurl }}/assets/js/plugins/isotope.pkgd.js'></script>
+    <script src='{{ site.baseurl }}/assets/js/plugins/jquery.smartmenus.min.js'></script>
+    <script src='{{ site.baseurl }}/assets/js/plugins/owl.carousel.min.js'></script>
+    <script src='{{ site.baseurl }}/assets/js/plugins/circle-progress.min.js'></script>
+    <script src='{{ site.baseurl }}/assets/js/main.js'></script>
+
+</body>
+</html>
